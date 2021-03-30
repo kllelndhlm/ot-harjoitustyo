@@ -1,6 +1,6 @@
 # OTSIKON KOKO
 ## Risuaitojen avulla
-### Mitä enemmän, sitä pinempi
+### Mitä enemmän, sitä pienempi
 
 **Lihavoitu** on ympäröity kaksilla asteriskeilla, *kursivoitu* yksillä.
 
