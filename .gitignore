@@ -1,4 +1,8 @@
 src/app/.pytest_cache
 src/app/.coverage
 src/app/htmlcov
+<<<<<<< HEAD
 htmlcove
+=======
+htmlcov
+>>>>>>> 25edeb48e471895065952f0b466ec110de6cd3a3
