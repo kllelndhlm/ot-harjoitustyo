@@ -1,3 +1,4 @@
 src/app/.pytest_cache
 src/app/.coverage
 src/app/htmlcov
+htmlcov
