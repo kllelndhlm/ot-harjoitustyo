@@ -5,4 +5,10 @@
 |30.03.2021|1|määrittelydokumentti|
 |09.04.2021|8|graafisen käyttöliittymän toteuttamiseen perehtyminen|
 |10.04.2021|7|Tkinterin opettelu ja opitun soveltaminen käyttöliittymään|
-|13.04.2201|5|repositorion valmistelu ja päivitys|
+|13.04.2021|5|repositorion valmistelu ja päivitys|
+|18.04.2021|3|Tkinterin opettelu|
+|18.04.2021|4|Tkinter-kokeilu ja käyttöliittymän ohjelmointi|
+|19.04.2021|4|käyttöliittymän ohjelmointi|
+|20.04.2021|2|käyttöliittymän ohjelmointi|
+|20.04.2021|2|repositorion valmistelu ja päivitys|
+|Tunnit:|36|
