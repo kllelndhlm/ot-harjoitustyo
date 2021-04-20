@@ -3,6 +3,7 @@ from tkinter import ttk, constants
 from tkinter import *
 import tkinter.font as font
 
+
 class EditView:
     def __init__(self, root):
         self._root = root
@@ -17,7 +18,8 @@ class EditView:
         self._frame.pack(fill=constants.X)
 
     def _delete_line_from_result(self):
-        self._txt_edit.delete(self._selection_linestart, self._selection_lineend)
+        self._txt_edit.delete(self._selection_linestart,
+                              self._selection_lineend)
 
     def _delete_selection(self):
         self._txt_edit.delete(self._selection_start, self._selection_end)
@@ -31,76 +33,90 @@ class EditView:
         self._selection_lineend = self._txt_edit.index("sel.last lineend")
         self._selection_start = self._txt_edit.index("sel.first")
         self._selection_end = self._txt_edit.index("sel.last")
-        self._up_till_selection = self._txt_edit.get("1.0", self._selection_start)
-        self._following_selection = self._txt_edit.get(self._selection_end, END)
+        self._up_till_selection = self._txt_edit.get(
+            "1.0", self._selection_start)
+        self._following_selection = self._txt_edit.get(
+            self._selection_end, END)
 
     def _h1_markdown(self):
-        self._selection = self._txt_edit.get("sel.last linestart", "sel.last lineend")
+        self._selection = self._txt_edit.get(
+            "sel.last linestart", "sel.last lineend")
         self._remove_markdown()
         self._selection_indices()
         self._delete_line_from_result()
-        self._txt_edit.insert(self._txt_edit.index(self._selection_linestart), "# "+ self._selection)
+        self._txt_edit.insert(self._txt_edit.index(
+            self._selection_linestart), "# " + self._selection)
         self._txt_edit.tag_remove(SEL, "1.0", END)
 
     def _h2_markdown(self):
-        self._selection = self._txt_edit.get("sel.last linestart", "sel.last lineend")
+        self._selection = self._txt_edit.get(
+            "sel.last linestart", "sel.last lineend")
         self._remove_markdown()
         self._selection_indices()
         self._delete_line_from_result()
-        self._txt_edit.insert(self._txt_edit.index(self._selection_linestart), "## "+ self._selection)
+        self._txt_edit.insert(self._txt_edit.index(
+            self._selection_linestart), "## " + self._selection)
         self._txt_edit.tag_remove(SEL, "1.0", END)
 
     def _h3_markdown(self):
-        self._selection = self._txt_edit.get("sel.last linestart", "sel.last lineend")
+        self._selection = self._txt_edit.get(
+            "sel.last linestart", "sel.last lineend")
         self._remove_markdown()
         self._delete_line_from_result()
-        self._txt_edit.insert(self._txt_edit.index(self._selection_linestart), "### "+ self._selection)
+        self._txt_edit.insert(self._txt_edit.index(
+            self._selection_linestart), "### " + self._selection)
         self._txt_edit.tag_remove(SEL, "1.0", END)
 
     def _body_markdown(self):
-        self._selection = self._txt_edit.get("sel.last linestart", "sel.last lineend")
+        self._selection = self._txt_edit.get(
+            "sel.last linestart", "sel.last lineend")
         self._remove_markdown()
         self._selection_indices()
         self._delete_line_from_result()
-        self._txt_edit.insert(self._txt_edit.index(self._selection_linestart), self._selection)
+        self._txt_edit.insert(self._txt_edit.index(
+            self._selection_linestart), self._selection)
         self._txt_edit.tag_remove(SEL, "1.0", END)
 
     def _italic_markdown(self):
         self._selection = self._txt_edit.get("sel.first", "sel.last")
         self._selection_indices()
-        if  self._selection[0] == "_" and self._selection[-1] == "_":
+        if self._selection[0] == "_" and self._selection[-1] == "_":
             while self._selection[0] == "_":
                 self._selection = self._selection[1:]
             while self._selection[-1] == "_":
                 self._selection = self._selection[:-1]
             self._delete_selection()
-            self._txt_edit.insert(self._txt_edit.index(self._selection_start), self._selection)
+            self._txt_edit.insert(self._txt_edit.index(
+                self._selection_start), self._selection)
         else:
             while self._selection[0] == "_":
                 self._selection = self._selection[1:]
             while self._selection[-1] == "_":
                 self._selection = self._selection[:-1]
             self._delete_selection()
-            self._txt_edit.insert(self._selection_start, "_" + self._selection + "_")
+            self._txt_edit.insert(self._selection_start,
+                                  "_" + self._selection + "_")
         self._txt_edit.tag_remove(SEL, "1.0", END)
 
     def _bold_markdown(self):
         self._selection = self._txt_edit.get("sel.first", "sel.last")
         self._selection_indices()
-        if  self._selection[0] == "*" and self._selection[-1] == "*":
+        if self._selection[0] == "*" and self._selection[-1] == "*":
             while self._selection[0] == "*":
                 self._selection = self._selection[1:]
             while self._selection[-1] == "*":
                 self._selection = self._selection[:-1]
             self._delete_selection()
-            self._txt_edit.insert(self._txt_edit.index(self._selection_start), self._selection)
+            self._txt_edit.insert(self._txt_edit.index(
+                self._selection_start), self._selection)
         else:
             while self._selection[0] == "*":
                 self._selection = self._selection[1:]
             while self._selection[-1] == "*":
                 self._selection = self._selection[:-1]
             self._delete_selection()
-            self._txt_edit.insert(self._txt_edit.index(self._selection_start), "**" + self._selection + "**")
+            self._txt_edit.insert(self._txt_edit.index(
+                self._selection_start), "**" + self._selection + "**")
         self._txt_edit.tag_remove(SEL, "1.0", END)
 
     def _copy_txt(self):

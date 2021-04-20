@@ -1,5 +1,6 @@
 from ui.edit_view import EditView
 
+
 class UI:
     def __init__(self, root):
         self._root = root
