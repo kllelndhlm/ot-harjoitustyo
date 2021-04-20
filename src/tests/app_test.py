@@ -1,6 +1,7 @@
 import unittest
-import app
+from ui.ui import UI
 
-def test_h1_markdown():
-    selection = 123
-    assertEqual(str("# 123"))
+
+class TestUI(unittest.TestCase):
+    def setUp(self):
+        print("Set up goes here")
