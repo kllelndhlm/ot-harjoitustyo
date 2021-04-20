@@ -1,3 +1,5 @@
 # Markdown-editori
+Editorilla voi muokata tekstiä markdown-muotoon.
 
-Editorilla voi muokata tekstiä markdown-muotoon. Maalaa ylempään ikkunaan kirjoittamasi teksti ja paina painiketta sen mukaan mihin muotoon haluat tekstin. Muotoiltu teskti alempaan ikkunaan.
+## Käyttöohje
+Maalaa ikkunaan kirjoittamasi teksti ja paina painiketta sen mukaan mihin muotoon haluat tekstin. Tekstin voi kopioida leikepöydälle copy-painikkeella.
