@@ -1,1 +1,1 @@
-![luokka/pakkauskaavio](kuvat/luokka_pakkauskaavio.scg "luokka/pakauskaavio")
+![luokka/pakkauskaavio](kuvat/luokka_pakkauskaavio.jpg "luokka/pakauskaavio")
