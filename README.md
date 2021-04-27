@@ -24,14 +24,11 @@ https://github.com/kllelndhlm/ot-harjoitustyo/releases/tag/viikko5
    - "poetry run invoke start"
 
 ### Dokumentaatio
-#### Luokkakaavio
-https://github.com/kllelndhlm/ot-harjoitustyo/blob/94a3d2609f929060fc0691d415c051908cae5881/dokumentaatio/arkkitehtuuri.md
-
-#### Sekvenssikaavio
-https://github.com/kllelndhlm/ot-harjoitustyo/blob/94a3d2609f929060fc0691d415c051908cae5881/dokumentaatio/arkkitehtuuri.md
+#### Luokkakaavio ja sekvenssikaavio
+https://github.com/kllelndhlm/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md
 
 #### Määrittelydokumentti
-https://github.com/kllelndhlm/ot-harjoitustyo/blob/94a3d2609f929060fc0691d415c051908cae5881/dokumentaatio/m%C3%A4%C3%A4rittelydokumentti.md
+https://github.com/kllelndhlm/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md
 
 #### Työaikakirjanpito
-https://github.com/kllelndhlm/ot-harjoitustyo/blob/94a3d2609f929060fc0691d415c051908cae5881/dokumentaatio/tyoaikakirjanpito.md
+https://github.com/kllelndhlm/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md
