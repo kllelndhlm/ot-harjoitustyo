@@ -11,4 +11,7 @@
 |19.04.2021|4|käyttöliittymän ohjelmointi|
 |20.04.2021|2|käyttöliittymän ohjelmointi|
 |20.04.2021|2|repositorion valmistelu ja päivitys|
-|Tunnit:|36|
+|27.04.2021|4|Testien kirjoittamisen opettelu|
+|27.04.2021|1|Releasen luonti|
+|27.04.2021|2|Sekvenssikaavio ja dokumentaatio|
+|Tunnit:|43|
