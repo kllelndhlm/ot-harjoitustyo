@@ -25,10 +25,10 @@ https://github.com/kllelndhlm/ot-harjoitustyo/releases/tag/viikko5
 
 ### Dokumentaatio
 #### Luokkakaavio ja sekvenssikaavio
-https://github.com/kllelndhlm/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md
+https://github.com/kllelndhlm/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md
 
 #### Määrittelydokumentti
-https://github.com/kllelndhlm/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md
+https://github.com/kllelndhlm/ot-harjoitustyo/blob/master/dokumentaatio/m%C3%A4%C3%A4rittelydokumentti.md
 
 #### Työaikakirjanpito
 https://github.com/kllelndhlm/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md
