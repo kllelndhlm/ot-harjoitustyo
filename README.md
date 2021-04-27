@@ -1,18 +1,21 @@
 # Markdown-editori
-Editorilla voi muokata tekstiä markdown-muotoon.
+- Editorilla voi muokata tekstiä markdown-muotoon.
 
-## Käynnistys
-Saat ohjelman käyntiin  komentoriviltä komennoilla "poetry install" ja "poetry run invoke start"
+### Käynnistys
+- Saat ohjelman käyntiin komentoriviltä seuraavilla komennoilla:
 
-## Testikattavuus
+    - "poetry install"
+    - "poetry run invoke start"
+
+### Testikattavuus
 Generoi testikattavuusraportti komennolla "poetry run invoke coverage-report"
 
-## Käyttöohje
+### Käyttöohje
 - Maalaa ikkunaan kirjoittamasi teksti ja paina painiketta sen mukaan mihin muotoon haluat tekstin.
 
 - Tekstin voi kopioida leikepöydälle copy-painikkeella.
 
-## Release
+### Release
 https://github.com/kllelndhlm/ot-harjoitustyo/releases/tag/viikko5
 
 - Lataa zip-tiedosto
@@ -25,14 +28,15 @@ https://github.com/kllelndhlm/ot-harjoitustyo/releases/tag/viikko5
    - "poetry install"
    - "poetry run invoke start"
 
-### Luokkakaavio
+### Dokumentaatio
+#### Luokkakaavio
 https://github.com/kllelndhlm/ot-harjoitustyo/blob/94a3d2609f929060fc0691d415c051908cae5881/dokumentaatio/arkkitehtuuri.md
 
-### Sekvenssikaavio
+#### Sekvenssikaavio
 https://github.com/kllelndhlm/ot-harjoitustyo/blob/94a3d2609f929060fc0691d415c051908cae5881/dokumentaatio/arkkitehtuuri.md
 
-### Määrittelydokumentti
+#### Määrittelydokumentti
 https://github.com/kllelndhlm/ot-harjoitustyo/blob/94a3d2609f929060fc0691d415c051908cae5881/dokumentaatio/m%C3%A4%C3%A4rittelydokumentti.md
 
-### Työaikakirjanpito
+#### Työaikakirjanpito
 https://github.com/kllelndhlm/ot-harjoitustyo/blob/94a3d2609f929060fc0691d415c051908cae5881/dokumentaatio/tyoaikakirjanpito.md
