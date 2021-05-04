@@ -14,6 +14,7 @@ Generoi testikattavuusraportti komennolla "poetry run invoke coverage-report"
 - Tekstin voi kopioida leikepöydälle copy-painikkeella.
 
 ### Release
+https://github.com/kllelndhlm/ot-harjoitustyo/releases/tag/viikko6
 https://github.com/kllelndhlm/ot-harjoitustyo/releases/tag/viikko5
 
 - Lataa zip-tiedosto
