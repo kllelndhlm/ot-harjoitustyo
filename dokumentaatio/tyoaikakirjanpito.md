@@ -15,4 +15,5 @@
 |27.04.2021|1|Releasen luonti|
 |27.04.2021|2|Sekvenssikaavio ja dokumentaatio|
 |04.05.2021|4|Käyttöliittymän ja sovelluslogiikan erottelu|
+|04.05.2021|1|Toiminnallisuuden lisäys ja Docstringin aloitus|
 |Tunnit:|47|
