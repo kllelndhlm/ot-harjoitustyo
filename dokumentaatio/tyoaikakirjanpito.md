@@ -14,4 +14,5 @@
 |27.04.2021|4|Testien kirjoittamisen opettelu|
 |27.04.2021|1|Releasen luonti|
 |27.04.2021|2|Sekvenssikaavio ja dokumentaatio|
-|Tunnit:|43|
+|04.05.2021|4|Käyttöliittymän ja sovelluslogiikan erottelu|
+|Tunnit:|47|
