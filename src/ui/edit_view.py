@@ -22,9 +22,11 @@ class EditView:
                               self._selection_lineend)
 
     def _delete_selection(self):
+        """Poistaa tekstivalinnan."""
         self._txt_edit.delete(self._selection_start, self._selection_end)
 
     def _remove_markdown(self):
+        """Poistaa valitusta otsikkomuotoillusta tekstistä risuaidat."""
         while self._selection[0] == "#" or self._selection[0] == " ":
             self._selection = self._selection[1:]
 
@@ -48,6 +50,9 @@ class EditView:
 
     def _bold_markdown(self):
         edit_service.bold_markdown(self)
+
+    def _strikethrough_markdown(self):
+        edit_service.strikethrough_markdown(self)
 
     def _copy_txt(self):
         edit_service.copy_txt(self)
@@ -84,6 +89,10 @@ class EditView:
             master=self._frame, text="Bold",
             command=self._bold_markdown
         )
+        strikethrough_button = ttk.Button(
+            master=self._frame, text="Strikethrough",
+            command=self._strikethrough_markdown
+        )
         copy_button = ttk.Button(
             master=self._frame, text="Copy",
             command=self._copy_txt
@@ -96,4 +105,5 @@ class EditView:
         body_button.pack()
         italic_button.pack()
         bold_button.pack()
+        strikethrough_button.pack()
         copy_button.pack()
