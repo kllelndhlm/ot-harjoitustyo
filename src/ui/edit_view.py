@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk, constants
 from tkinter import *
 import tkinter.font as font
-
+from services.edit_service import EditService as edit_service
 
 class EditView:
     def __init__(self, root):
@@ -29,100 +29,28 @@ class EditView:
             self._selection = self._selection[1:]
 
     def _selection_indices(self):
-        self._selection_linestart = self._txt_edit.index("sel.last linestart")
-        self._selection_lineend = self._txt_edit.index("sel.last lineend")
-        self._selection_start = self._txt_edit.index("sel.first")
-        self._selection_end = self._txt_edit.index("sel.last")
-        self._up_till_selection = self._txt_edit.get(
-            "1.0", self._selection_start)
-        self._following_selection = self._txt_edit.get(
-            self._selection_end, END)
+        edit_service.selection_indices(self)
 
     def _h1_markdown(self):
-        self._selection = self._txt_edit.get(
-            "sel.last linestart", "sel.last lineend")
-        self._remove_markdown()
-        self._selection_indices()
-        self._delete_line_from_result()
-        self._txt_edit.insert(self._txt_edit.index(
-            self._selection_linestart), "# " + self._selection)
-        self._txt_edit.tag_remove(SEL, "1.0", END)
+        edit_service.h1_markdown(self)
 
     def _h2_markdown(self):
-        self._selection = self._txt_edit.get(
-            "sel.last linestart", "sel.last lineend")
-        self._remove_markdown()
-        self._selection_indices()
-        self._delete_line_from_result()
-        self._txt_edit.insert(self._txt_edit.index(
-            self._selection_linestart), "## " + self._selection)
-        self._txt_edit.tag_remove(SEL, "1.0", END)
+        edit_service.h2_markdown(self)
 
     def _h3_markdown(self):
-        self._selection = self._txt_edit.get(
-            "sel.last linestart", "sel.last lineend")
-        self._remove_markdown()
-        self._delete_line_from_result()
-        self._txt_edit.insert(self._txt_edit.index(
-            self._selection_linestart), "### " + self._selection)
-        self._txt_edit.tag_remove(SEL, "1.0", END)
+        edit_service.h3_markdown(self)
 
     def _body_markdown(self):
-        self._selection = self._txt_edit.get(
-            "sel.last linestart", "sel.last lineend")
-        self._remove_markdown()
-        self._selection_indices()
-        self._delete_line_from_result()
-        self._txt_edit.insert(self._txt_edit.index(
-            self._selection_linestart), self._selection)
-        self._txt_edit.tag_remove(SEL, "1.0", END)
+        edit_service.body_markdown(self)
 
     def _italic_markdown(self):
-        self._selection = self._txt_edit.get("sel.first", "sel.last")
-        self._selection_indices()
-        if self._selection[0] == "_" and self._selection[-1] == "_":
-            while self._selection[0] == "_":
-                self._selection = self._selection[1:]
-            while self._selection[-1] == "_":
-                self._selection = self._selection[:-1]
-            self._delete_selection()
-            self._txt_edit.insert(self._txt_edit.index(
-                self._selection_start), self._selection)
-        else:
-            while self._selection[0] == "_":
-                self._selection = self._selection[1:]
-            while self._selection[-1] == "_":
-                self._selection = self._selection[:-1]
-            self._delete_selection()
-            self._txt_edit.insert(self._selection_start,
-                                  "_" + self._selection + "_")
-        self._txt_edit.tag_remove(SEL, "1.0", END)
+        edit_service.italic_markdown(self)
 
     def _bold_markdown(self):
-        self._selection = self._txt_edit.get("sel.first", "sel.last")
-        self._selection_indices()
-        if self._selection[0] == "*" and self._selection[-1] == "*":
-            while self._selection[0] == "*":
-                self._selection = self._selection[1:]
-            while self._selection[-1] == "*":
-                self._selection = self._selection[:-1]
-            self._delete_selection()
-            self._txt_edit.insert(self._txt_edit.index(
-                self._selection_start), self._selection)
-        else:
-            while self._selection[0] == "*":
-                self._selection = self._selection[1:]
-            while self._selection[-1] == "*":
-                self._selection = self._selection[:-1]
-            self._delete_selection()
-            self._txt_edit.insert(self._txt_edit.index(
-                self._selection_start), "**" + self._selection + "**")
-        self._txt_edit.tag_remove(SEL, "1.0", END)
+        edit_service.bold_markdown(self)
 
     def _copy_txt(self):
-        self._root.clipboard_clear()
-        copied = self._txt_edit.get("1.0", "end-1c")
-        self._root.clipboard_append(copied)
+        edit_service.copy_txt(self)
 
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)
