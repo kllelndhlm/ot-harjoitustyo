@@ -9,14 +9,14 @@ class UI:
     def start(self):
         self._show_edit_view()
 
-    def _hide_current_view(self):
-        if self._current_view:
-            self._current_view.destroy()
+#    def _hide_current_view(self):
+#        if self._current_view:
+#            self._current_view.destroy()
 
-        self._current_view = None
+#        self._current_view = None
 
     def _show_edit_view(self):
-        self._hide_current_view()
+#        self._hide_current_view()
 
         self._current_view = EditView(
             self._root

@@ -33,6 +33,12 @@ class EditView:
     def _selection_indices(self):
         edit_service.selection_indices(self)
 
+    def _h123_sel_rmv_ind_del(self):
+        edit_service.h123_sel_rmv_ind_del(self)
+
+    def _italic_bold_strikethrough(self, indx, markdn):
+        edit_service.italic_bold_strikethrough(self, indx, markdn)
+
     def _h1_markdown(self):
         edit_service.h1_markdown(self)
 
