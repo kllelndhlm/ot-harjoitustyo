@@ -105,6 +105,9 @@ class EditView:
         )
 
         self._txt_edit.pack(fill="both", expand=True, side="right")
+ 
+        self._txt_edit.insert("1.0", "Hello")
+
         h1_button.pack()
         h2_button.pack()
         h3_button.pack()

@@ -103,3 +103,4 @@ class EditService:
         self._root.clipboard_clear()
         copied = self._txt_edit.get("1.0", "end-1c")
         self._root.clipboard_append(copied)
+        return copied
