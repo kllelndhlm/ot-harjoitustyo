@@ -16,5 +16,6 @@
 |27.04.2021|2|Sekvenssikaavio ja dokumentaatio|
 |04.05.2021|4|Käyttöliittymän ja sovelluslogiikan erottelu|
 |04.05.2021|1|Toiminnallisuuden lisäys ja Docstringin aloitus|
-|012.05.2021|4|Copy+pasten karsiminen ja Docstring|
-|Tunnit:|51|
+|12.05.2021|4|Copy+pasten karsiminen ja Docstring|
+|14.05.2021|7|Testit ja kattavuus|
+|Tunnit:|58|
