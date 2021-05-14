@@ -11,10 +11,6 @@ class TestEditService(unittest.TestCase):
     def setUp(self):
         self.kokeilu = EditService(root)
 
-    def test_h1(self):
-        self.kokeilu._txt_edit = tk.Text(root)
-        self.assertEqual(self.kokeilu.h1_markdown(), "# Hello")
-
     def test_copy(self):
         self.kokeilu._txt_edit = tk.Text(root)
         self.assertEqual(self.kokeilu.copy_txt(), "")
