@@ -26,7 +26,7 @@ https://github.com/kllelndhlm/ot-harjoitustyo/releases/tag/viikko5
    - "poetry run invoke start"
 
 ### Dokumentaatio
-#### Luokkakaavio ja sekvenssikaavio
+#### Arkkitehtuuri
 https://github.com/kllelndhlm/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md
 
 #### Määrittelydokumentti
