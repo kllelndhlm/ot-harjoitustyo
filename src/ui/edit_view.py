@@ -18,15 +18,19 @@ class EditView:
         self._frame.pack(fill=constants.X)
 
     def _delete_line_from_result(self):
+        """Poistaa valitun tekstin tekstiruudusta.
+        """
         self._txt_edit.delete(self._selection_linestart,
                               self._selection_lineend)
 
     def _delete_selection(self):
-        """Poistaa tekstivalinnan."""
+        """Poistaa tekstivalinnan.
+        """
         self._txt_edit.delete(self._selection_start, self._selection_end)
 
     def _remove_markdown(self):
-        """Poistaa valitusta otsikkomuotoillusta tekstistä risuaidat."""
+        """Poistaa valitusta otsikkomuotoillusta tekstistä risuaidat.
+        """
         while self._selection[0] == "#" or self._selection[0] == " ":
             self._selection = self._selection[1:]
 
@@ -105,8 +109,8 @@ class EditView:
         )
 
         self._txt_edit.pack(fill="both", expand=True, side="right")
- 
-        self._txt_edit.insert("1.0", "Hello")
+
+        self._txt_edit.insert("1.0", "")
 
         h1_button.pack()
         h2_button.pack()

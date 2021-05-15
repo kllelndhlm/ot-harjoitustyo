@@ -5,7 +5,6 @@ import tkinter.font as font
 from services.edit_service import EditService
 from ui.edit_view import EditView
 from ui.ui import UI
-from services.edit_service import EditService
 
 class TestEditService(unittest.TestCase):
     def setUp(self):
