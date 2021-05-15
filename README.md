@@ -11,6 +11,10 @@ Generoi testikattavuusraportti komennolla "poetry run invoke coverage-report"
 
 ### Käyttöohje
 - Maalaa ikkunaan kirjoittamasi teksti ja paina painiketta sen mukaan mihin muotoon haluat tekstin.
+- h1, h2 ja h3 ovat otsikoille laskevassa kokojärjestyksessä
+- body poistaa otsikkomuotoilun
+- italic kursivoi, bold lihavoi ja strikethrough yliviivaa
+- Muotoillessa jo muotoiltua tekstiä, muotoilu vaikuttaa uloimpana tekstistä, esimerkiksi '*# teksti*' voi lisätä muotoilun tai poistaa lihavointia vastaavan '*...*'-muotoilun, mutta ei otsikkomuotoilua
 - Tekstin voi kopioida leikepöydälle copy-painikkeella.
 
 ### Release
