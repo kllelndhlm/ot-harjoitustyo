@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "\u0018cd t"
+version = "\u001b[A\u001b[A"
+description = ""
+authors = ["Kalle Lindholm <kalle.lindholm@helsinki.fi>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
