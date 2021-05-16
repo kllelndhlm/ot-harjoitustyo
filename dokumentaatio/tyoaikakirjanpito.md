@@ -18,4 +18,6 @@
 |04.05.2021|1|Toiminnallisuuden lisäys ja Docstringin aloitus|
 |12.05.2021|4|Copy+pasten karsiminen ja Docstring|
 |14.05.2021|7|Testit ja kattavuus|
-|Tunnit:|58|
+|15.05.2021|1|Arkkitehtuuri|
+|16.05.2021|1|Repositorio|
+||Yhteensä: 61||
