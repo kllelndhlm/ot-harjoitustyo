@@ -36,5 +36,9 @@ https://github.com/kllelndhlm/ot-harjoitustyo/blob/master/dokumentaatio/arkkiteh
 #### Määrittelydokumentti
 https://github.com/kllelndhlm/ot-harjoitustyo/blob/master/dokumentaatio/m%C3%A4%C3%A4rittelydokumentti.md
 
+#### Testausdokumentti
+https://github.com/kllelndhlm/ot-harjoitustyo/blob/master/dokumentaatio/testausdokumentti.md
+
 #### Työaikakirjanpito
 https://github.com/kllelndhlm/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md
+
